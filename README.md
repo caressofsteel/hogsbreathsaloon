@@ -1,4 +1,4 @@
-# World Famous Hog’s Breath Saloon in beautiful Key West, FL!
+# World Famous Hog’s Breath Saloon in beautiful Key West!
 
 <p align="center">
   <img src="images/keywest-logo-min.png">
