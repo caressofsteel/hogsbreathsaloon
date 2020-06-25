@@ -1,0 +1,145 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Hog's Breath Saloon - Bar Cams">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="CaressOfSteel">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hog's Breath Saloon - Key West</title>
+        <link rel="stylesheet" href="css/clappr.css" />
+        <style>      
+            body {
+                background-image: url("images/main-bg-min.jpg");
+                background-repeat: repeat;
+            }
+
+            .center {
+                margin: auto;
+                width: 75%;
+                border: 0px solid green;
+                padding: 0px;
+            }
+            
+            .title {
+                color: #000;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                text-align: center;
+            }
+
+            .logo { 
+                float: left;
+                margin-top: 10px;
+                margin-left: 200px;            
+            }
+
+            .enjoy {
+                color: #000;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                float: left;
+                margin: auto;
+                margin-top: 10px;
+                
+            }
+            
+            .sig {
+                color: #A02F11;
+                float: right;              
+                margin-bottom: 30px;
+            }
+        </style>
+        <script src='https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>  
+    </head>
+
+    <body>
+
+        <div class="center">
+            
+            <div class="title">
+                <h1>World Famous Hog’s Breath Saloon in beautiful Key West, FL!</h1>
+            </div>
+
+            <!-- Player 1 -->
+            <div id="player1" class="16x9" style="float: left;">
+                <script>
+                var player = new Clappr.Player({
+                    parentId: '#player1',
+                    source: 'https://55507e0501d25.streamlock.net/live-audio/smil:hogsbreath3.smil/playlist.m3u8',
+                    mute: false,
+                    playback: {
+                        controls:false,
+                        playInline: true
+                    },
+                    mediacontrol: {
+                        seekbar: "#00bf80",
+                        buttons: "#ffffff",
+                    },
+                    autoPlay: true,
+                                    plugins: [ChromecastPlugin]
+                });
+                </script>
+            </div>
+
+            <!-- Player 2 -->
+            <div id="player2" class="16x9" style="float:left;">
+                <script>
+                    var player = new Clappr.Player({
+                    parentId: '#player2',
+                    source: 'https://55507e0501d25.streamlock.net/live-audio/hogsbreath1-audio.stream/playlist.m3u8',
+                    mute: true,
+                    playback: {
+                        controls:false,
+                        playInline: true
+                    },
+                    mediacontrol: {
+                        seekbar: "#00bf80",
+                        buttons: "#ffffff",
+                    },
+                    autoPlay: true,
+                                    plugins: [ChromecastPlugin]
+                    });
+                </script>
+            </div>
+
+            <!-- Player 3 -->
+            <div id="player3" class="16x9" style="float: left;">
+                <script>
+                    var player = new Clappr.Player({
+                    parentId: '#player3',
+                    source: 'https://55507e0501d25.streamlock.net/live-audio/hogsbreath2-audio.stream/playlist.m3u8',
+                    mute: true,
+                    playback: {
+                        controls:false,
+                        playInline: true
+                    },
+                    mediacontrol: {
+                        seekbar: "#00bf80",
+                        buttons: "#ffffff",
+                    },
+                    autoPlay: true,
+                                    plugins: [ChromecastPlugin]
+                    });
+                </script>
+            </div>
+
+            <div class="logo">
+                <!-- Logo -->
+                <img src="images/keywest-logo-min.png" alt="Key West Logo" width="241" height="347">
+            </div>
+            
+            <div class="enjoy">
+                Welcome to the World Famous Hog’s Breath Saloon in beautiful Key West, FL! I've never actually been to this bar, but I've their website bookmarked for years and visit it from time to time to get some live music and atmosphere from their live cams when I'm stuck at home. This page puts all of their cams on one screen. Enjoy!
+                <br />
+                <span class="sig">- caressofsteel</span>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
