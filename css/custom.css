@@ -12,15 +12,17 @@ body {
 
 .title {
     color: #000;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Girassol', cursive;
 }
 
 .logo { 
+    /*
     float: left;
     margin-top: 10px;
     margin-left: 240px;
+    */
 }
 
 .enjoy {
@@ -32,8 +34,10 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;       
 }
 
-.counter {                
+.counter {  
+    /*              
     margin-left: 95px;
+    */
 }
 
 .sig {

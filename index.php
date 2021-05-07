@@ -39,39 +39,18 @@
 
         <!-- Header Row -->
         <div class="row text-center">
+
             <div class="col-md-12">
                 <!-- Title -->
                 <div class="title">
                     <h1>World Famous Hog's Breath Saloon in Key West, FL.</h1>
                 </div>
             </div>
+            
         </div>
 
         <!-- Content Row 1 -->
-        <div class="row text-center">
-
-            <!-- Player 3 - Raw Bar Cam -->
-            <div class="col-md-6">
-                <div id="player3" class="16x9">
-                    <script>
-                        var player = new Clappr.Player({
-                            parentId: '#player3',
-                            source: 'https://55507e0501d25.streamlock.net/live-audio/hogsbreath2-audio.stream/playlist.m3u8',
-                            mute: true,
-                            playback: {
-                                controls: false,
-                                playInline: true
-                            },
-                            mediacontrol: {
-                                seekbar: "#00bf80",
-                                buttons: "#ffffff",
-                            },
-                            autoPlay: true,
-                            plugins: [ChromecastPlugin]
-                        });
-                    </script>
-                </div>
-            </div>
+        <div class="row container-fluid">
 
             <!-- Player 1 - Stage Cam -->
             <div class="col-md-6">
@@ -95,19 +74,14 @@
                     </script>
                 </div>
             </div>
-
-        </div>
-
-        <!-- Content Row 2 -->    
-        <div class="row">
-
-            <!-- Player 2 - Bar Cam (Out of Service Since Kung-Flu) -->    
-            <div class="col-md-6">
-                <div id="player2" class="16x9">
+            
+            <!-- Player 3 - Raw Bar Cam -->
+            <div class="col-md-6"">
+                <div id="player3" class="16x9">
                     <script>
                         var player = new Clappr.Player({
-                            parentId: '#player2',
-                            source: 'https://55507e0501d25.streamlock.net/live-audio/hogsbreath1-audio.stream/playlist.m3u8',
+                            parentId: '#player3',
+                            source: 'https://55507e0501d25.streamlock.net/live-audio/hogsbreath2-audio.stream/playlist.m3u8',
                             mute: true,
                             playback: {
                                 controls: false,
@@ -123,9 +97,14 @@
                     </script>
                 </div>
             </div>
-            
+
+        </div>
+
+        <!-- Content Row 2 -->    
+        <div class="row text-center">
+           
             <!-- Logo & Counter -->
-            <div class="col-md-6">
+            <div class="col-md-12">
                  <div class="logo">
                     <a target="_blank" href="https://www.hogsbreath.com/keywest/"><img src="images/keywest-logo-min.png" alt="Hog's Breath Key West Logo"></a>
 
@@ -159,12 +138,14 @@
         <!-- Footer Row -->
         <div class="row">
             <div class="col-md-12">
+
                 <!-- Greetings -->
                 <div class="enjoy">
                     Welcome to the World Famous Hog's Breath Saloon in beautiful Key West, Florida. I've have yet to visit this bar (hope to one day), but I've had their webcam page bookmarked for years so I can enjoy the great live music and atmosphere. This page puts all of their cams on one screen. Enjoy!
                     <br />
                     <span class="sig">- <a target="_blank" href="https://github.com/caressofsteel/hogsbreathsaloon">caressofsteel</a></span>
                 </div>
+
             </div>
         </div>        
 
