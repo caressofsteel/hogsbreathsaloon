@@ -52,14 +52,14 @@
         <!-- Content Row 1 -->
         <div class="row container-fluid">
 
-            <!-- Player 1 - Stage Cam -->
-            <div class="col-md-6">
-                <div id="player1" >
+            <!-- Player 3 - Raw Bar Cam -->
+            <div class="col-md-6"">
+                <div id="player3" class="16x9">
                     <script>
                         var player = new Clappr.Player({
-                            parentId: '#player1',
-                            source: 'https://55507e0501d25.streamlock.net/live-audio/smil:hogsbreath3.smil/playlist.m3u8',
-                            mute: false,
+                            parentId: '#player3',
+                            source: 'https://55507e0501d25.streamlock.net/live-audio/hogsbreath2-audio.stream/playlist.m3u8',
+                            mute: true,
                             playback: {
                                 controls: false,
                                 playInline: true
@@ -74,15 +74,15 @@
                     </script>
                 </div>
             </div>
-            
-            <!-- Player 3 - Raw Bar Cam -->
-            <div class="col-md-6"">
-                <div id="player3" class="16x9">
+
+            <!-- Player 1 - Stage Cam -->
+            <div class="col-md-6">
+                <div id="player1" >
                     <script>
                         var player = new Clappr.Player({
-                            parentId: '#player3',
-                            source: 'https://55507e0501d25.streamlock.net/live-audio/hogsbreath2-audio.stream/playlist.m3u8',
-                            mute: true,
+                            parentId: '#player1',
+                            source: 'https://55507e0501d25.streamlock.net/live-audio/smil:hogsbreath3.smil/playlist.m3u8',
+                            mute: false,
                             playback: {
                                 controls: false,
                                 playInline: true
