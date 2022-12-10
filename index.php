@@ -58,7 +58,7 @@
                     <script>
                         var player = new Clappr.Player({
                             parentId: '#player3',
-                            source: 'https://55507e0501d25.streamlock.net/live-audio/hogsbreath2-audio.stream/playlist.m3u8',
+                            source: 'https://stream.resortcams.com/live-hogsbreath/hogsbreath2-audio.stream/playlist.m3u8',
                             mute: true,
                             playback: {
                                 controls: false,
@@ -81,7 +81,7 @@
                     <script>
                         var player = new Clappr.Player({
                             parentId: '#player1',
-                            source: 'https://55507e0501d25.streamlock.net/live-audio/smil:hogsbreath3.smil/playlist.m3u8',
+                            source: 'https://stream.resortcams.com/live-hogsbreath/smil:hogsbreath3.smil/playlist.m3u8',                  
                             mute: false,
                             playback: {
                                 controls: false,
