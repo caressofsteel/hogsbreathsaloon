@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6YHT9RLND"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W6YHT9RLND');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Hog's Breath Saloon - Bar Cams">
@@ -52,6 +63,29 @@
         <!-- Content Row 1 -->
         <div class="row container-fluid">
 
+            <!-- Player 1 - Stage Cam -->
+            <div class="col-md-6">
+                <div id="player1" >
+                    <script>
+                        var player = new Clappr.Player({
+                            parentId: '#player1',
+                            source: 'https://stream.resortcams.com/live-hogsbreath/smil:hogsbreath3.smil/playlist.m3u8',                  
+                            mute: false,
+                            playback: {
+                                controls: false,
+                                playInline: true
+                            },
+                            mediacontrol: {
+                                seekbar: "#00bf80",
+                                buttons: "#ffffff",
+                            },
+                            autoPlay: true,
+                            plugins: [ChromecastPlugin]
+                        });
+                    </script>
+                </div>
+            </div>
+            
             <!-- Player 3 - Raw Bar Cam -->
             <div class="col-md-6"">
                 <div id="player3" class="16x9">
@@ -75,29 +109,6 @@
                 </div>
             </div>
 
-            <!-- Player 1 - Stage Cam -->
-            <div class="col-md-6">
-                <div id="player1" >
-                    <script>
-                        var player = new Clappr.Player({
-                            parentId: '#player1',
-                            source: 'https://stream.resortcams.com/live-hogsbreath/smil:hogsbreath3.smil/playlist.m3u8',                  
-                            mute: false,
-                            playback: {
-                                controls: false,
-                                playInline: true
-                            },
-                            mediacontrol: {
-                                seekbar: "#00bf80",
-                                buttons: "#ffffff",
-                            },
-                            autoPlay: true,
-                            plugins: [ChromecastPlugin]
-                        });
-                    </script>
-                </div>
-            </div>
-
         </div>
 
         <!-- Content Row 2 -->    
@@ -106,27 +117,8 @@
             <!-- Logo & Counter -->
             <div class="col-md-12">
                  <div class="logo">
-                    <a target="_blank" href="https://www.hogsbreath.com/keywest/"><img src="images/keywest-logo-min.png" alt="Hog's Breath Key West Logo"></a>
-
-                    <!-- Default Statcounter code for HogsBreath https://rtsga.com/hogsbreath/ -->
-                    <div class="counter">
-
-                        <script type="text/javascript">
-                            var sc_project = 12385309;
-                            var sc_invisible = 0;
-                            var sc_security = "1a80b9b0";
-                            var scJsHost = "https://";
-                            document.write("<sc" + "ript type='text/javascript' src='" +
-                                scJsHost +
-                                "statcounter.com/counter/counter.js'></" + "script>");
-                        </script>
-
-                        <noscript>
-                        <div class="statcounter">
-                            <a title="Web Analytics Made Easy - StatCounter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12385309/0/1a80b9b0/0/" alt="Web Analytics Made Easy - StatCounter"></a>
-                        </div>
-                        </noscript>
-
+                    <a target="_blank" href="https://www.hogsbreath.com/keywest/">
+                        <img src="images/keywest-logo-min.png" alt="Hog's Breath Key West Logo"></a>                  
                     </div>
                     <!-- End of Statcounter Code -->
 
